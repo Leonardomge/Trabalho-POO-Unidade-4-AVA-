@@ -44,11 +44,8 @@ public class Cliente
 
     public CarrinhoDeCompras getCarrinho() { return carrinho; }
 
-
     @Override
     public String toString() {
         return String.format("Cliente: %-20s | CPF: %s | Email: %s", nome, cpf, email);
     }
-
-
 }

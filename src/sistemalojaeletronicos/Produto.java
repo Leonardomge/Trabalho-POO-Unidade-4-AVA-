@@ -28,12 +28,10 @@ public abstract class Produto
 
     public abstract String getDetalhes();
 
-
     @Override
     public String toString()
     {
         return String.format("[%s] %s %s - R$ %.2f",
                 getClass().getSimpleName(), marca, modelo, preco);
     }
-
 }

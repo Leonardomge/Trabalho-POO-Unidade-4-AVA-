@@ -13,16 +13,13 @@ public class Main
         TV tv1 = new TV("LG",      "OLED C3",     4799.00, 55, "4K",      true);
         TV tv2 = new TV("Samsung", "Crystal UHD", 2199.00, 50, "4K",      true);
 
-
         System.out.println("  CATÁLOGO DE PRODUTOS DA LOJA  ");
-
 
         Produto[] catalogo = { s1, s2, l1, l2, tv1, tv2 };
         for (Produto p : catalogo)
         {
             System.out.println(p.getDetalhes());
         }
-
 
         System.out.println("     CLIENTES     ");
 
@@ -31,7 +28,6 @@ public class Main
 
         System.out.println(leo);
         System.out.println(maria);
-
 
         System.out.println("\n Leo está montando seu carrinho:");
         leo.adicionarAoCarrinho(s1,  1);
@@ -54,13 +50,9 @@ public class Main
         leo.removerDoCarrinho(tv1);
         leo.exibirCarrinho();
 
-
         System.out.println("  RESUMO DE PEDIDOS   ");
-
         System.out.printf("  %-20s → Total a pagar: R$ %.2f%n", leo.getNome(),  leo.calcularTotal());
         System.out.printf("  %-20s → Total a pagar: R$ %.2f%n", maria.getNome(), maria.calcularTotal());
 
     }
-
-
 }

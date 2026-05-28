@@ -28,12 +28,10 @@ public class Smartphone extends Produto
         this.cameraMegapixels = cameraMegapixels;
     }
 
-
     @Override
     public String getDetalhes()
     {
         return String.format("Smartphone: %s %s | Tela: %.1f\" | Armazenamento: %dGB | Câmera: %dMP | Preço: R$ %.2f",
                 getMarca(), getModelo(), tamanhoTela, capacidadeArmazenamento, cameraMegapixels, getPreco());
     }
-
 }

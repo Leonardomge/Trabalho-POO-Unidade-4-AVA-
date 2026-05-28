@@ -23,13 +23,11 @@ public class TV extends Produto
     public boolean isSmartTV() { return smartTV; }
     public void setSmartTV(boolean smartTV) { this.smartTV = smartTV; }
 
-
     @Override
     public String getDetalhes()
     {
         return String.format("TV: %s %s | Tela: %.0f\" | Resolução: %s | Smart TV: %s | Preço: R$ %.2f",
                 getMarca(), getModelo(), tamanhoTela, resolucao, smartTV ? "Sim" : "Não", getPreco());
     }
-
 }
 

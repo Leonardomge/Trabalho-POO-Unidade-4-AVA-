@@ -17,6 +17,7 @@ public class ItemCarrinho
     public Produto getProduto() { return produto; }
 
     public int getQuantidade() { return quantidade; }
+
     public void setQuantidade(int quantidade)
     {
         if (quantidade <= 0) throw new IllegalArgumentException("Quantidade deve ser maior que zero.");
@@ -32,6 +33,5 @@ public class ItemCarrinho
     {
         return String.format("  %-50s | Qtd: %2d | Subtotal: R$ %9.2f", produto.toString(), quantidade, getSubtotal());
     }
-
 }
 

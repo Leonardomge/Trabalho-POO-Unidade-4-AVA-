@@ -3,7 +3,6 @@ package sistemalojaeletronicos;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class CarrinhoDeCompras
 {
     private final List<ItemCarrinho> itens;
@@ -11,7 +10,6 @@ public class CarrinhoDeCompras
     public CarrinhoDeCompras() {
         this.itens = new ArrayList<>();
     }
-
 
     public void adicionarProduto(Produto produto, int quantidade) {
         for (ItemCarrinho item : itens)
@@ -29,7 +27,6 @@ public class CarrinhoDeCompras
                 produto.getMarca(), produto.getModelo(), quantidade);
     }
 
-
     public void removerProduto(Produto produto)
     {
         boolean removido = itens.removeIf(item -> item.getProduto().equals(produto));
@@ -45,7 +42,6 @@ public class CarrinhoDeCompras
         }
     }
 
-
     public double calcularTotal()
     {
         double total = 0;
@@ -55,7 +51,6 @@ public class CarrinhoDeCompras
         }
         return total;
     }
-
 
     public void exibirCarrinho()
     {
@@ -75,7 +70,5 @@ public class CarrinhoDeCompras
     }
 
     public List<ItemCarrinho> getItens() { return itens; }
-
     public boolean estaVazio() { return itens.isEmpty(); }
-
 }
